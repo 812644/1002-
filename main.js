@@ -21,7 +21,8 @@ function init() {
 function animate() {
     // erase the HTMLCanvasElement
     context.clearRect(0, 0, canvas.width, canvas.height);
-    runMovers();   // run bubbles
+    runMovers();   // run movers
+    runOrbiters(); // run orbiters
     requestAnimationFrame(animate); // next cycle
 }
 
